@@ -1,0 +1,89 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 23.2% 46.8% 30%;
+    grid-column-gap: 0em;
+    grid-row-gap: 0em;
+    margin: auto;
+    border: 1px solid #646464;
+}
+
+.grid-container > div {
+    background: #FFFDF3;
+    border: 3px solid #646464;
+}
+
+.pic-block {
+    display: flex;
+    justify-content: center;
+    padding: 0em;
+}
+
+.title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column:2/ span 2;
+    padding: 1em;
+}
+
+.title-block > span {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -25px;
+    font-family: Georgia;
+}
+
+#about-block {
+    grid-column:1/ span 2;
+    padding: 1em;
+}
+
+#menu-block {
+    grid-column:3;
+    font-family:Georgia; font-size: 1em; font-weight: bold;
+    padding: 1em;
+}
+
+#menu-block > a {
+    text-decoration: none;
+    color: black;
+}
+
+#research-block {
+    grid-column:1/ span 3;
+    padding: 1em;
+}
+
+#classes-block {
+    grid-column:1/ span 3;
+    padding: 1em;
+}
+
+#projects-block {
+    grid-column:1/ span 3;
+    padding: 1em;
+}
+
+/*NEW STUFF---------*/
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+#vikr-pic {
+    display:block;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+}
+
+#name-plate {
+    font-size: 1.65em;
+    color: #D69036;
+}
+#section-title {
+    font-family:Georgia; font-size: 1em; font-weight: bold;
+    color: #D69036;
+}

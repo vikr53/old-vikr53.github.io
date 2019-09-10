@@ -1,10 +1,10 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 23.2% 46.8% 30%;
+    grid-template-columns: 23.2% 46.8% 30.2%;
     grid-column-gap: 0em;
     grid-row-gap: 0em;
     margin: auto;
-    border: 1px solid #646464;
+    border: 2px solid #646464;
 }
 
 .grid-container > div {
@@ -83,7 +83,13 @@
     font-size: 1.65em;
     color: #D69036;
 }
+
 #section-title {
+    font-family:Georgia; font-size: 1.2em; font-weight: bold;
+    color: #D69036;
+}
+
+#subsection-title {
     font-family:Georgia; font-size: 1em; font-weight: bold;
     color: #D69036;
 }

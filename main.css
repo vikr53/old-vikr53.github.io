@@ -42,6 +42,7 @@
     grid-column:3;
     font-family:Georgia; font-size: 1em; font-weight: bold;
     padding: 1em;
+    overflow-wrap: break-word;
 }
 
 #menu-block > a {
@@ -114,6 +115,11 @@
     .title-block > span {
         margin-top: -30;
         margin-left: -25;
+    }
+
+    #menu-block {
+        padding-top: 30%;
+        font-size: 0.8em;
     }
 
 }

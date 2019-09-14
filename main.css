@@ -67,13 +67,14 @@
 /*NEW STUFF---------*/
 
 .wrapper {
-    width: 90vw;
+    width: 800px;
     margin: 0 auto;
 }
 
 #vikr-pic {
+    max-width: 250px;
+    max-height: 250px;
     width: 100%;
-    max-height: 300px;
     height: auto;
 }
 
@@ -90,4 +91,29 @@
 #subsection-title {
     font-family:Georgia; font-size: 1em; font-weight: bold;
     color: #D69036;
+}
+
+@media screen and (max-width:800px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+    #vikr-pic {
+        display: none;
+    }
+
+    .grid-container {    
+        grid-template-columns: 0% 70.0% 30.2%;
+    }
+
+    .wrapper {
+        width: 90vw;
+    }
+
+    .title-block {
+        padding-top: 30px;
+    }
+
+    .title-block > span {
+        margin-top: -30;
+        margin-left: -25;
+    }
+
 }

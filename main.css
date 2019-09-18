@@ -13,9 +13,7 @@
 }
 
 .pic-block {
-    display: flex;
     justify-content: center;
-    padding: 0em;
 }
 
 .title-block {
@@ -29,8 +27,8 @@
 .title-block > span {
     position: absolute;
     margin-top: -50px;
-    margin-left: -25px;
-    font-family: Georgia;
+    margin-left: -82px;
+    font-family: Oswald;
 }
 
 #menu-block {
@@ -48,6 +46,8 @@
 #menu-block > div > a {
     text-decoration: none;
     color: black;
+    font-family: Oswald;
+    padding: 5px;
 }
 
 #research-block {
@@ -85,19 +85,23 @@
 }
 
 #section-title {
-    font-family:Georgia; font-size: 1.2em; font-weight: bold;
+    font-family:Oswald; font-size: 1.5em; font-weight: bold;
     color: #D69036;
 }
 
 #subsection-title {
-    font-family:Georgia; font-size: 1em; font-weight: bold;
+    font-family:Oswald; font-size: 1em; font-weight: bold;
     color: #D69036;
 }
 
 #link-wrapper {
-    width: 90%;
-    background-color: #FFF;
+    width: 95%;
+    background-color: #BEBEBE;
     padding: 3px;
+}
+
+body {
+    font-family: Open Sans;
 }
 
 @media screen and (max-width:800px) {
@@ -107,7 +111,7 @@
     }
 
     .grid-container {    
-        grid-template-columns: 0% 70.0% 30.2%;
+        grid-template-columns: 0% 70.0% 30.0%;
     }
 
     .wrapper {
@@ -126,6 +130,7 @@
     #menu-block {
         padding-top: 30%;
         font-size: 0.8em;
+        display:none
     }
 
 }

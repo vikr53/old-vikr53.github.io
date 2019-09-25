@@ -51,7 +51,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 19.0% 50.8% 31%;
+    grid-template-columns: 25.0% 44.8% 31%;
     grid-column-gap: 0em;
     grid-row-gap: 0em;
     margin: auto;
@@ -165,14 +165,6 @@ body {
 }
 
 @media screen and (max-width:970px) {
-    #vikr-pic {
-        display: none;
-    }
-
-    .grid-container {    
-        grid-template-columns: 0% 70.0% 30.0%;
-    }
-
     .wrapper {
         width: 90vw;
     }
@@ -196,4 +188,17 @@ body {
         display: none;
     }
 
+}
+
+@media screen and (max-width:800px) {
+    #vikr-pic {
+        display: none;
+    }
+    .grid-container {    
+        grid-template-columns: 0% 70.0% 30.0%;
+    }
+    .title-block > span {
+    position: absolute;
+    font-family: Oswald;
+}
 }

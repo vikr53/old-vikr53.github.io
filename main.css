@@ -1,3 +1,54 @@
+/* The navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  /*grid-column: 1 / span 3; *//* Full width */
+  margin: 0 auto;
+}
+
+/* Links inside the navbar */
+/* Right-aligned section inside the top navigation */
+.navbar a {
+  float: left;
+  display: inline; /*block;*/
+  color: black;
+  background-color: #DADADA;
+  width:80%;
+  text-align: left;
+  padding: 3px 5px;
+  text-decoration: none;
+  border: 3px solid #646464;
+  border-left: 5px solid #D69036;
+  
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  background-color: white;
+}
+
+
+
+/* Main content */
+/* Add a top margin to avoid content overlay */
+.main {
+   margin-top: 30px; 
+}
+
+#link-wrapper {
+    float: left;
+    display: inline;
+    font-family:Oswald; font-size: 1em; font-weight: bold;
+    background-color: #BEBEBE;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    width: 9%;  
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 19.0% 50.8% 31%;
@@ -9,11 +60,14 @@
 
 .grid-container > div {
     background: #E8E8E8; 
-    border: 3px solid #FFF;
+    /* border: 2px solid #FFF;*/
 }
 
 .pic-block {
     justify-content: center;
+    padding: 1em;
+    line-height: 0;
+    font-size: 0;
 }
 
 .title-block {
@@ -31,23 +85,19 @@
     font-family: Oswald;
 }
 
-#menu-block {
-    grid-column:1 /span 1;
-    font-family:Georgia; font-size: 1em; font-weight: bold;
-    padding: 1em;
-    overflow-wrap: break-word;
+
+#spacer {
+    grid-column:1 /span 3;
+    /*padding: 1em;*/
 }
 
+#home-block {
+    grid-column:1 /span 3;
+    padding: 1em;
+}
 #about-block {
-    grid-column:2 /span 3;
+    grid-column:1 /span 3;
     padding: 1em;
-}
-
-#menu-block > div > a {
-    text-decoration: none;
-    color: black;
-    font-family: Oswald;
-    padding: 5px;
 }
 
 #research-block {
@@ -65,6 +115,9 @@
     padding: 1em;
 }
 
+.tab {
+    margin-left: 40px;
+}
 /*NEW STUFF---------*/
 
 .wrapper {
@@ -75,9 +128,14 @@
 #vikr-pic {
     max-width: 250px;
     max-height: 250px;
-    width: 100%;
+    /*width: 100%;*/
+    width: auto;
     height: auto;
+    margin:0 auto;
+    /*border-radius:5%;*/
+    background-size: cover;
 }
+
 
 #name-plate {
     font-size: 1.65em;
@@ -94,14 +152,18 @@
     color: #D69036;
 }
 
-#link-wrapper {
-    width: 95%;
-    background-color: #BEBEBE;
-    padding: 3px;
+#menu-block {
+    /*grid-column:1 /span 1;*/
+    font-family:Georgia; font-size: 1em; font-weight: bold;
+    /* padding: 1em;*/
+    /*overflow-wrap: break-word;*/
 }
 
-#link-wrapper > a:hover {
-    color: #FFFFFF;
+#menu-block > div > a {
+    text-decoration: none;
+    color: black;
+    font-family: Oswald;
+    padding: 5px;
 }
 
 body {
@@ -111,6 +173,9 @@ body {
 @media screen and (max-width:800px) {
   /* CSS for screens that are 320 pixels or less will be put in this section */
     #vikr-pic {
+        display: none;
+    }
+    .navbar{
         display: none;
     }
 

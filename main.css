@@ -1,11 +1,18 @@
 /* The navigation bar */
 .navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  /*grid-column: 1 / span 3; *//* Full width */
-  margin: 0 auto;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    /*grid-column: 1 / span 3; *//* Full width */
+    margin: 0 auto;
+    float: left;
+    display: inline;
+    font-family:Oswald; font-size: 1em; font-weight: bold;
+    background-color: #BEBEBE;
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+    width: 9%;  
 }
 
 /* Links inside the navbar */
@@ -21,7 +28,7 @@
   text-decoration: none;
   border: 3px solid #646464;
   border-left: 5px solid #D69036;
-  
+  overflow: wrap;
 }
 
 /* Change background on mouse-over */
@@ -39,14 +46,7 @@
 }
 
 #link-wrapper {
-    float: left;
-    display: inline;
-    font-family:Oswald; font-size: 1em; font-weight: bold;
-    background-color: #BEBEBE;
-    text-decoration: none;
-    color: black;
-    padding: 2px;
-    width: 9%;  
+    
 }
 
 .grid-container {
@@ -83,12 +83,6 @@
     margin-top: -50px;
     margin-left: -82px;
     font-family: Oswald;
-}
-
-
-#spacer {
-    grid-column:1 /span 3;
-    /*padding: 1em;*/
 }
 
 #home-block {
@@ -170,12 +164,8 @@ body {
     font-family: Open Sans;
 }
 
-@media screen and (max-width:800px) {
-  /* CSS for screens that are 320 pixels or less will be put in this section */
+@media screen and (max-width:970px) {
     #vikr-pic {
-        display: none;
-    }
-    .navbar{
         display: none;
     }
 
@@ -200,6 +190,10 @@ body {
         padding-top: 30%;
         font-size: 0.8em;
         display:none
+    }
+
+    .navbar {
+        display: none;
     }
 
 }

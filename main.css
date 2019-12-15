@@ -142,11 +142,16 @@
 }
 
 #subsection-title {
-    font-family:Oswald; font-size: 1.3em; font-weight: bold;
+    font-family:Oswald; font-size: 1.4em; font-weight: bold;
     color: #D69036;
 }
 
 #subsubsection-title {
+    font-family:Oswald; font-size: 1.2em; font-weight: bold;
+    color: #D69036;
+}
+
+#subsubsubsection-title {
     font-family:Oswald; font-size: 1em; font-weight: bold;
     color: #D69036;
 }

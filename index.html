@@ -28,18 +28,47 @@
                     &nbsp; &nbsp; &nbsp; &nbsp; Certification in Robotics and Mechatronics <br> 
                     University of Texas at Austin <br> Class of 2020 </div><hr>
                 <div id="about-block"> <span id="section-title">About</span>
-                    <p><blockquote>I am a senior undergraduate student working on my honors thesis with Dr. Mitchell Pryor in the Nuclear Robotics Group at UT Austin. Outside of research, I really enjoy playing and watching basketball. This website collates the results of my research and projects.</blockquote></p>
+                    <p><blockquote>I am a senior undergraduate student working on controls/optimization/robotics research, advised by Dr. Mitch Pryor and Dr. Luis Sentis at UT Austin.
+
+                </blockquote></p>
                 </div><hr>
                 <div id="research-block"> <span id="section-title">Research</span><br>
-                    <span id="subsection-title">Publications</span><br>  <blockquote>                
-                    [1] Ramanathan, V., Zelenak, A., Pryor, M. Instantaneous Center of Rotation-Based Master-Slave Kinematic Modeling and Control. In <i>Upcoming 2019 ASME Dynamic Systems and Control Conference, Park City, UT</i>. <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
+                    <span id="subsection-title">Control and Path Planning of Pseudo-Omnidirectional Non-Holonomic Wheeled Mobile Robot</span><br>
+                    <span id="subsubsection-title">Pre-prints</span><br>  <blockquote>                
+                    [1] Vikram Ramanathan and Mitch Pryor. Non-linear Receding Horizon Model-Predictive Control for Omni-directional Mobile Robot Given an Offset Reference Trajectory. <i>In prep</i> <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
+                    <br> <p style="margin-left:10px">Abstract: This article presents a novel Model Predictive Controller (NLMPC) motion planner for an omni-directional Wheeled Mobile Robot (WMR) given some offset reference trajectory. Carrying an offset alpha radition sensor attached to one of its sides, our WMR is intended to follow a desired survey path accurately while remaining in known "contamination-free" areas and avoiding any obstacles along the way. This controller defines the robot's kinematics as a simple single integrator, formulates the obstacle avoidance problem as a quadratic constraint and optimizes over a quadratic cost function of the alpha sensor tracking error and the control input. The coordinate transformation from the robot base to the alpha sensor introduces nonlinearity into the formulation. However, this nonlinearity is eliminated by alternatively formulating a Mixed Integer Program (MIP) that uses a piece-wise approximation of the sin and cos trignometric functions and integer decision variables to specify which piece of the trignometric functions the solver is constrained to. Simulations of the MPC solving for a robot base trajectory given the alpha sensor trajectory demonstrate the validity of this approach. </p></blockquote>
+
+                    <span id="subsubsection-title">Publications</span><br>  <blockquote>                
+                    [1] Vikram Ramanathan, Andy Zelenak, and Mitch Pryor. Instantaneous Center of Rotation-Based Master-Slave Kinematic Modeling and Control. <i>Proceedings of the ASME 2019 Dynamic Systems and Control Conference. Volume 3, Rapid Fire Interactive Presentations: Advances in Control Systems; Advances in Robotics and Mechatronics; Automotive and Transportation Systems; Motion Planning and Trajectory Tracking; Soft Mechatronic Actuators and Sensors; Unmanned Ground and Aerial Vehicles.</i> Park City, Utah, USA. October 8–11, 2019. V003T17A005. ASME. https://doi.org/10.1115/DSCC2019-9123 <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
                     <br> <p style="margin-left:10px">Abstract: This article presents a novel kinematic model and controller design for a mobile robot with four Centered Orientable Conventional (COC) wheels. When compared to non-conventional wheels, COC wheels perform better over rough terrain, are not subject to vertical chatter and offer better braking capability. However, COC wheels are pseudo-omnidirectional and subject to nonholonomic constraints. Several established modeling and control techniques define and control the Instantaneous Center of Rotation (ICR); however, this method involves singular configu- rations that are not trivial to eliminate. The proposed method uses a novel ICR-based kinematic model to avoid these singularities, and an ICR-based nonlinear controller for one ‘master’ wheel. The other ‘slave’ wheels simply track the resulting kinematic relationships between the ‘master’ wheel and the ICR. Thus, the nonlinear control problem is reduced from 12th to 3rd-order, becoming much more tractable. Simulations with a feedback linearization controller verify the approach. </p></blockquote>
+
+                    <span id="subsection-title">Humanoid Footstep Planning</span><br>
+                    <span id="subsubsection-title">Pre-prints</span><br>  <blockquote>                
+                    [1] Vikram Ramanathan, Luis Sentis. Footstep Planning with Encoded Linear Temporal Logic Specifications. <i>In prep</i>. <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
+                    <br> <p style="margin-left:10px">Abstract: This article first presents an approach to encode Linear Temporal Logic (LTL) Specifications into aMixed Integer Quadratically Constrained Quadratic Program (MIQCQP) footstep planner. By addingLTL specifications to the program, we can ensure that only safe and desirable performance is achievedgivena prioriknowledge of environment behavior.  We extend the MIQCQP footstep planner byencoding temporal logic specifications over the convex regions of obstacle-free space. Simulationsof the footstep planner in a 2D environment satisfying encoded LTL specifications demonstrate theresults of this research.</p></blockquote>
+
                 </div><hr>
-                <div id="projects-block"> <span id="section-title">Projects</span><br><blockquote>
-                    Stealthy Path Planner <a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://github.com/vikr53/stealthy_path_planning">[Github]</a> <br>
-                    Self-Powered Flow Rate Sensor <a href="projects/Self_Powered_Flow_Rate_Sensor.pdf">[Report]</a> <a href="https://youtu.be/R9OMfRjJs0k">[video]</a> <br>
-                    FRACTRAN Interpreter + FRACTRAN Programming <a href="projects/Fractran.pdf">[Report]</a> <a href="https://github.com/vikr53/fractran">[Github]</a> <br>
-                    Fastest.World iOS Application <a href="https://github.com/vikr53/fastest-world">[Github]</a>
+                <div id="projects-block"> <span id="section-title">Design Projects</span><br><blockquote>
+                    <p style="font-size: large">2D Icing Printer <a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://youtu.be/R9OMfRjJs0k">[Video]</a> </big><br>
+                    <p style="margin-left:10px"> <img src="projects/images/icing_printer.jpg" alt="Pic of Icing Printer" style="width:250px;height:250px;margin-right: 15px; float: left">
+                    <img src="projects/images/icing_printer_cad.png" alt="Pic of Icing Printer CAD" style="width:250px;height:250px;margin-right: 15px; float:left">
+                        Description:
+                    </p>
+                    <br style="clear:left"><p style="clear:left; font-size: large">Stealthy Path Planner <a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://github.com/vikr53/stealthy_path_planning">[Github]</a> </p>
+                    <p style="margin-left:10px; clear:left;"> <img src="projects/images/stealthy_path_planner.png" alt="Pic of Stealthy Path Planner" style="width:250px;height:250px;margin-right: 15px; float: left;"> 
+                        Description:
+                    </p>
+                    <br style="clear:left"><p style="clear:left; font-size: large">Self-Powered Flow Rate Sensor <a href="projects/Self_Powered_Flow_Rate_Sensor.pdf">[Report]</a> <a href="https://youtu.be/R9OMfRjJs0k">[Video]</a> </p>
+                    <p style="margin-left:10px;"> <img src="projects/images/flow_sensor.jpg" alt="Pic of Flow Rate Sensor" style="width:250px;height:250px;margin-right: 15px; float: left;"> 
+                    <img src="projects/images/flowsensor_cad.png" alt="Pic of Flow Rate Sensor CAD" style="width:250px;height:250px;margin-right: 15px; float:left">
+                    Description:
+                    <br style="clear:left"><p style="clear:left; font-size: large">FRACTRAN Interpreter + FRACTRAN Programming <a href="projects/Fractran.pdf">[Report]</a> <a href="https://github.com/vikr53/fractran">[Github]</a> </p>
+                    <p style="margin-left:10px; clear:left;"> <img src="projects/images/fractran.png" alt="Pic of FRACTRAN" style="width:250px;height:250px;margin-right: 15px; float: left;">
+                        Description: loren ipsum 
+                    <br style="clear:left"><p style="clear:left; font-size: large">Fastest.World iOS Application <a href="https://github.com/vikr53/fastest-world">[Github]</a></p>
+                    <p style="margin-left:10px; clear:left;"> <img src="projects/images/fastest_world.png" alt="Pic of Fastest.World App" style="width:150px;height:300px;margin-right: 15px; float: left;">
+                        Description:
+
                     </blockquote>
                 </div><hr>
                 <div id="classes-block"> <span id="section-title">Coursework</span><br> 

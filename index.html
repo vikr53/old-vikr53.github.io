@@ -36,46 +36,57 @@
                     <span id="subsection-title">1. Control and Path Planning of Pseudo-Omnidirectional Non-Holonomic Wheeled Mobile Robot</span><br><br>
 
                     <span id="subsubsection-title">&nbsp; &nbsp; &nbsp;Publications</span><br>  <blockquote>                
-                    Vikram Ramanathan, Andy Zelenak, and Mitch Pryor. Instantaneous Center of Rotation-Based Master-Slave Kinematic Modeling and Control. <i>Proceedings of the ASME 2019 Dynamic Systems and Control Conference. Volume 3, Rapid Fire Interactive Presentations: Advances in Control Systems; Advances in Robotics and Mechatronics; Automotive and Transportation Systems; Motion Planning and Trajectory Tracking; Soft Mechatronic Actuators and Sensors; Unmanned Ground and Aerial Vehicles.</i> Park City, Utah, USA. October 8–11, 2019. V003T17A005. ASME. https://doi.org/10.1115/DSCC2019-9123 <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
+                    [1] Vikram Ramanathan, Andy Zelenak, and Mitch Pryor. Instantaneous Center of Rotation-Based Master-Slave Kinematic Modeling and Control. <i>Proceedings of the ASME 2019 Dynamic Systems and Control Conference. Volume 3, Rapid Fire Interactive Presentations: Advances in Control Systems; Advances in Robotics and Mechatronics; Automotive and Transportation Systems; Motion Planning and Trajectory Tracking; Soft Mechatronic Actuators and Sensors; Unmanned Ground and Aerial Vehicles.</i> Park City, Utah, USA. October 8–11, 2019. V003T17A005. ASME. https://doi.org/10.1115/DSCC2019-9123 <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
                     <br> <p style="margin-left:10px">Abstract: This article presents a novel kinematic model and controller design for a mobile robot with four Centered Orientable Conventional (COC) wheels. When compared to non-conventional wheels, COC wheels perform better over rough terrain, are not subject to vertical chatter and offer better braking capability. However, COC wheels are pseudo-omnidirectional and subject to nonholonomic constraints. Several established modeling and control techniques define and control the Instantaneous Center of Rotation (ICR); however, this method involves singular configu- rations that are not trivial to eliminate. The proposed method uses a novel ICR-based kinematic model to avoid these singularities, and an ICR-based nonlinear controller for one ‘master’ wheel. The other ‘slave’ wheels simply track the resulting kinematic relationships between the ‘master’ wheel and the ICR. Thus, the nonlinear control problem is reduced from 12th to 3rd-order, becoming much more tractable. Simulations with a feedback linearization controller verify the approach. </p></blockquote>
 
-                    <span id="subsubsection-title"> &nbsp; &nbsp; &nbsp;Implementation + Media</span><br><blockquote>&nbsp; &nbsp; Insert slides & informative video here <br></blockquote>
+                    <span id="subsubsection-title"> &nbsp; &nbsp; &nbsp;Implementation + Media</span><br><blockquote>&nbsp; &nbsp; <iframe width="560" height="315" src="https://www.youtube.com/embed/15LunNrg7tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+                    <br>
+                    <span id="subsubsection-title"> Slides </span>
+                    <br> &nbsp; &nbsp;
+                    <a href="publications/presentation_scrat.pdf"><img src="projects/images/scrat_title_slide.png" alt="Slides" style=" height: 300px;"></a>
+
+                    </blockquote>
 
                     <span id="subsubsection-title"> &nbsp; &nbsp; Current Work</span><br> 
 
                     <span id="subsubsubsection-title"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Trajectory Optimization for Omni-directional Mobile Robot Given an Offset Reference Trajectory</span><br>  <blockquote><p style="margin-left:10px">This research involved the development of a Nonlinear Model Predictive Controller for an omni-directional Wheeled Mobile Robot (WMR) given some offset reference trajectory. Carrying an offset alpha radition sensor attached to one of its sides, our WMR is intended to follow a desired survey path accurately while remaining in known "contamination-free" areas and avoiding any obstacles along the way. This controller defines the robot's kinematics as a simple single integrator, formulates the obstacle avoidance problem as a quadratic constraint and optimizes over a quadratic cost function of the alpha sensor tracking error and the control input. The coordinate transformation from the robot base to the alpha sensor introduces nonlinearity into the formulation. This quadratically constrained nonlinear optimization problem is solved using Sequential Quadratic Programming (SQP). Simulations of the MPC solving a robot base trajectory given a alpha sensor trajectory demonstrate the validity of this approach. </p></blockquote>
 
-                    <span id="subsubsection-title"> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Simulations</span><br> <blockquote>&nbsp; &nbsp; Insert slides & informative video here <br></blockquote>
+                    <span id="subsubsection-title"> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;Simulation</span><br> <blockquote>&nbsp; &nbsp; <iframe width="560" height="315" src="https://www.youtube.com/embed/FI8T2ItFVnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <br></blockquote>
 
                     <span id="subsection-title">2. Humanoid Footstep Planning</span><br>
                     <span id="subsubsection-title">&nbsp; &nbsp; &nbsp;Pre-prints</span><br>  <blockquote>                
-                    Vikram Ramanathan, Ufuk Topcu, Luis Sentis. Footstep Planning with Encoded Linear Temporal Logic Specifications. <i>In prep</i>. <a href="publications/2019_ASME_DSCC_Ramanathan_Zelenak__Final_Paper_c.pdf">[pdf]</a>
-                    <br> <p style="margin-left:10px">Abstract: This article first presents an approach to encode Linear Temporal Logic (LTL) Specifications into aMixed Integer Quadratically Constrained Quadratic Program (MIQCQP) footstep planner. By addingLTL specifications to the program, we can ensure that only safe and desirable performance is achievedgivena prioriknowledge of environment behavior.  We extend the MIQCQP footstep planner byencoding temporal logic specifications over the convex regions of obstacle-free space. Simulationsof the footstep planner in a 2D environment satisfying encoded LTL specifications demonstrate theresults of this research.</p></blockquote>
+                    [2] Vikram Ramanathan, Ufuk Topcu, Luis Sentis. Footstep Planning with Encoded Linear Temporal Logic Specifications. <i>In prep</i>.
+                    <br> <p style="margin-left:10px">Abstract: This article first presents an approach to encode Linear Temporal Logic (LTL) Specifications into a Mixed Integer Quadratically Constrained Quadratic Program (MIQCQP) footstep planner. By adding LTL specifications to the program, we can ensure that only safe and desirable performance is achievedgivena prioriknowledge of environment behavior.  We extend the MIQCQP footstep planner byencoding temporal logic specifications over the convex regions of obstacle-free space. Simulations of the footstep planner in a 2D environment satisfying encoded LTL specifications demonstrate theresults of this research.</p></blockquote>
 
                     <span id="subsubsection-title">&nbsp; &nbsp; &nbsp;Media</span><br>  <blockquote>                
                     </blockquote>
 
                 </div><hr>
                 <div id="projects-block"> <span id="section-title">Design Projects</span><br><blockquote>
-                    <p style="font-size: large; font-weight:bold">2D Icing Printer<a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://youtu.be/R9OMfRjJs0k">[Video]</a> </p>
+                    <p style="font-size: large; color: #D69036;">2D Icing Printer
                     <p style="margin-left:10px"> <img src="projects/images/icing_printer.jpg" alt="Pic of Icing Printer" style="width:250px;height:250px;margin-right: 15px; float: left">
                     <img src="projects/images/icing_printer_cad.png" alt="Pic of Icing Printer CAD" style="width:250px;height:250px;margin-right: 15px; float:left">
-                        Description:
+                        Description: Made a 2D Food Printer that extrudes icing on top of a cake. The printer houses modules that move along rails in the X and Y printer coordinate frames. This movement is facilitated by a pulley-belt system. THe extrusion subassembly uses a stepper motor with a 28cm lead screw to push down on a 300 mL syringe.
                     </p>
-                    <br style="clear:left"><p style="clear:left; font-size: large">Stealthy Path Planner <a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://github.com/vikr53/stealthy_path_planning">[Github]</a> </p>
+                    <br style="clear:left"><p style="clear:left; font-size: large; color: #D69036;">Stealthy Path Planner <a href="projects/Stealthy_Path_Planning.pdf">[Report]</a> <a href="https://github.com/vikr53/stealthy_path_planning">[Github]</a> </p>
                     <p style="margin-left:10px; clear:left;"> <img src="projects/images/stealthy_path_planner.png" alt="Pic of Stealthy Path Planner" style="width:250px;height:250px;margin-right: 15px; float: left;"> 
-                        Description:
+                        Description: This was a toy problem that investigated the development of a stealthy search algorithm that minimizes exposure of the object under consideration to "areas of consequence" on the grid. Areas of consequence could range from capture zones in games to operational range of missiles and mines. In this solution, I elected to use a cost minimizing algorithm, specifically, A* search with a custom-made heuristic. This heuristic evaluates the minimum Euclidean distance to an obstacle on the grid from the node under study and then subtracts it from the Euclidean distance to the destination node. The result is assigned to the priority of the node in the priority queue used in the A* search.
                     </p>
-                    <br style="clear:left"><p style="clear:left; font-size: large">Self-Powered Flow Rate Sensor <a href="projects/Self_Powered_Flow_Rate_Sensor.pdf">[Report]</a> <a href="https://youtu.be/R9OMfRjJs0k">[Video]</a> </p>
+                    <br style="clear:left;"><p style="clear:left; font-size: large; color: #D69036;">Self-Powered Flow Rate Sensor <a href="projects/Self_Powered_Flow_Rate_Sensor.pdf">[Report]</a> </p>
                     <p style="margin-left:10px;"> <img src="projects/images/flow_sensor.jpg" alt="Pic of Flow Rate Sensor" style="width:250px;height:250px;margin-right: 15px; float: left;"> 
                     <img src="projects/images/flowsensor_cad.png" alt="Pic of Flow Rate Sensor CAD" style="width:250px;height:250px;margin-right: 15px; float:left">
-                    Description:
-                    <br style="clear:left"><p style="clear:left; font-size: large">FRACTRAN Interpreter + FRACTRAN Programming <a href="projects/Fractran.pdf">[Report]</a> <a href="https://github.com/vikr53/fractran">[Github]</a> </p>
+                    Description: The purpose of this project was to design a self-powered flow velocity sensor. The sensor is different from state-of-the-art implementations of flow rate sensing in that the mechanical design is not only smaller but also optimized for a larger range of flow velocity measurements. The sensor is also able to rectify input voltage signals, charge a battery, power an Arduino and have the ability to be calibrated easily. While this sensor is designed for civil applications (plumbing and piping systems), the mechanical design could be very easily altered to accommodate for flow sensing in water bodies (rivers, ocean currents, etc).
+                    <br>
+                    <div style="text-align: center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R9OMfRjJs0k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <br style="clear:left; color: #D69036;"><p style="clear:left; font-size: large; color: #D69036;">FRACTRAN Interpreter + FRACTRAN Programming <a href="projects/Fractran.pdf">[Report]</a> <a href="https://github.com/vikr53/fractran">[Github]</a> </p>
                     <p style="margin-left:10px; clear:left;"> <img src="projects/images/fractran.png" alt="Pic of FRACTRAN" style="width:250px;height:250px;margin-right: 15px; float: left;">
-                        Description: loren ipsum 
-                    <br style="clear:left"><p style="clear:left; font-size: large">Fastest.World iOS Application <a href="https://github.com/vikr53/fastest-world">[Github]</a></p>
+                        Description: Programmed an interpreter to play around with FRACTRAN, Conway's Turing-complete esoteric programming language.
+
+                    <br style="clear:left;"><p style="clear:left; font-size: large; color: #D69036;">Fastest.World iOS Application <a href="https://github.com/vikr53/fastest-world">[Github]</a></p>
                     <p style="margin-left:10px; clear:left;"> <img src="projects/images/fastest_world.png" alt="Pic of Fastest.World App" style="width:150px;height:300px;margin-right: 15px; float: left;">
-                        Description:
+                        Description: Developed an iOS relfex-based game that was available in the App Store from Oct, 2016 to Oct, 2017. In this game, a pointer follows a circular trajectory. At randomized times along this trajectory, the user is cued to tap the screen. The user must react fast enough to keep the pointer from leaving a “safe” section on the circle. A successful attempt to do so results in the pointer immediately reversing its direction of motion (clockwise to counter-clockwise and vice versa). As the game progresses, the speed of the pointer increases, and the “safe” region gets smaller. Furthermore, baked into the application was a user login system and a global leaderboard.
 
                     </blockquote>
                 </div><hr>
